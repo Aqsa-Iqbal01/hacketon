@@ -30,7 +30,7 @@ const ProductList: React.FC = () => {
 
   return (
     <Wrap>
-      <div className="bg-gray-50 overflow-x-hidden">
+      <div className="bg-gray-50 overflow-x-hidden ">
         {/* Product Grid */}
         <div className="py-10">
           <h1 className="text-2xl font-bold text-gray-800 mb-6">Explore Our Cars</h1>
@@ -38,7 +38,7 @@ const ProductList: React.FC = () => {
             {allCars.slice(0, visibleCars).map((car) => (
               <div
                 key={car.id}
-                className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition"
+                className="bg-white rounded-lg  shadow-md p-4 hover:shadow-lg transition"
               >
                
 
@@ -67,7 +67,7 @@ const ProductList: React.FC = () => {
             <div className="flex justify-center mt-6">
               <button
                 onClick={handleShowMore}
-                className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+                className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600  hover:scale-105 transition-transform duration-300"
               >
                 Show More Cars
               </button>
