@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { FaRegHeart } from "react-icons/fa";
 import Wrap from "./Wrap";
 
 const ProductList: React.FC = () => {
