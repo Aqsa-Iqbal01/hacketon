@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Form() {
   return (
-    <div className="  items-center mt-10 space-x-8 flex ">
+    <div className="  items-center mt-10 space-x-8 flex overflow-hidden ">
       <div className='ml-9 '>
       {/* Left Side: Radio Button */}
       <div className=" ml-16  ">
@@ -32,7 +32,7 @@ export default function Form() {
       </div>
       <div>
         <h2>Date</h2>
-        <h4>select your date</h4>
+        <h4 className='text-sm text-gray-400'>select your date</h4>
         <select> 
           <option></option>
           <option>15</option>
@@ -46,7 +46,7 @@ export default function Form() {
       </div>
       <div>
         <h2>Time</h2>
-        <h4>select your date</h4>
+        <h4 className='text-sm text-gray-400'>select your date</h4>
         <select> 
           <option></option>
           <option>2:30</option>
@@ -59,6 +59,10 @@ export default function Form() {
         </select>
       </div>
       </div>
+      </div>
+
+      <div>
+        <button></button>
       </div>
       <div className=" relative left-48 mb-24    ">
         <input
@@ -88,7 +92,7 @@ export default function Form() {
       
       <div>
         <h2>Date</h2>
-        <h4>select your date</h4>
+        <h4 className='text-sm text-gray-400'>select your date</h4>
         <select> 
           <option></option>
           <option>15</option>
@@ -102,7 +106,7 @@ export default function Form() {
       </div>
       <div>
         <h2>Time</h2>
-        <h4>select your date</h4>
+        <h4 className='text-sm text-gray-400'>select your date</h4>
         <select> 
           <option></option>
           <option>2:30</option>

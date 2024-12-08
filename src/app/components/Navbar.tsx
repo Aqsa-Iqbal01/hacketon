@@ -1,40 +1,60 @@
-import React from 'react'
-import Image from 'next/image'
-
-    import { FiSearch } from 'react-icons/fi'
-import { LuSettings2 } from 'react-icons/lu'
-import { FaBell, FaHeart } from 'react-icons/fa'
-import { IoSettingsSharp } from 'react-icons/io5'
+import Link from "next/link";
+import { CiSearch } from "react-icons/ci";
+import { IoIosHeart } from "react-icons/io";
+import { IoIosNotifications } from "react-icons/io";
+import { IoMdSettings } from "react-icons/io";
+import { VscSettings } from "react-icons/vsc";
+import Wrap from "./Wrap";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <div className='flex justify-between shadow-md bg-white '>
-      <div  className='mt-5 ml-3 md:ml-24'>
-        {/* left side div  */}
-        <Image src="/Logo (1).jpg" alt='img' width="150" height="100" className='w-20 md:mr-96 mt-3'></Image>
-      </div>
-      <div className=' border-md text-grey-500'>
-        {/* center side div  */}
-        
-        <div className="flex flex-row md:flex items-center mb-5 mr-96  bg-gray-100 border border-gray-300 px-6 py-3 w-96 mt-3 rounded-full">
-            <input
-              type="text"
-              placeholder="Search somthing here?" 
-              className="outline-none bg-transparent text-sm text-gray-700 text-center ml-7 "
-            />
-            <FiSearch className="text-gray-500 text-2xl cursor-pointer relative right-48 size-6" />
-            <LuSettings2 className='relative left-24 size-6 text-gray-500' />
+    <Wrap>
+      <header>
+        <nav className="flex justify-between items-center mt-7 lg:py-5 lg:px-5 px-1 ">
+          <div className="flex">
+            <h1 className="text-[#3563E9] text-[24px] font-[600] lg:text-[32px] lg:font-bold lg:leading-10">
+              MORENT
+            </h1>
           </div>
-          </div>
-      <div className='flex gap-7 md:mr-24 mt-5 text-xl mb-5 '>
-        {/* right side div  */}
-        {/* icons  */}
-        <FaHeart className='mt-3' />
-        <FaBell className='mt-3' />
-        <IoSettingsSharp className='mt-3' />
-        <Image src="/Image.png" alt='img' width="40" height="40" className='mr-2'></Image>
 
-      </div>
-    </div>
-  )
+          {/* Mobile Header */}
+        
+            <div className="flex  lg:w-auto justify-between items-center    lg:flex-row lg:items-center lg:-translate-x-[220px] absolute left-[5px] top-[80px] xxxs:left-[35px] xxs:left-[55px] xs:left-[80px] xsm:relative xsm:left-[0px] xsm:top-1">
+              <div className="flex items-center ">
+                <Link href="/">
+                  <CiSearch className="text-lg md:left-10 lg:left-12 md:text-2xl relative left-6" />
+                </Link>
+                <input
+                  type="search"
+                  name="search"
+                  placeholder="Search something here"
+                  className="md:py-3 md:px-12 rounded-md md:rounded-full border-[2px] focus:outline-none border-[#C3D4E966] lg:w-[500px] lg:px-16  text-xs sm:text-sm md:text-lg w-[230px] xxs:w-[290px] xs:w-[330px]  xsm:w-[300px]  py-2 pl-7 "
+                />
+              </div>
+              <Link href="/">
+                <VscSettings className=" md:relative md:right-12  md:text-3xl lg:border-[0px] lg:border-none lg:rounded-none lg:p-0  p-[2px]border-[1px] border-[#C3D4E966] rounded-md text-[34px] p-[2px] hover:scale-105 ml-2 mr-1 "  />
+              </Link>
+            </div>
+          
+
+          {/* Right Side Icons (Mobile & Desktop) */}
+          <div className="flex md:gap-7">
+            <IoIosHeart className="border-[1px] border-[#C3D4E966] rounded-full p-2 text-5xl text-gray-500 hover:scale-105 duration-300 hidden md:flex hover:text-[#3563E9]" />
+            <IoIosNotifications className="hidden md:flex border-[1px] border-[#C3D4E966] rounded-full p-2 text-5xl text-gray-500 hover:scale-105 duration-300 hover:text-[#3563E9]" />
+            <IoMdSettings className="hidden md:flex border-[1px] border-[#C3D4E966] rounded-full p-2 text-5xl text-gray-500 hover:scale-105 duration-300 hover:text-[#3563E9]" />
+            <Link href="#">
+              <Image
+                src="/Image.png"
+                alt=""
+                width={40}
+                height={40}
+                className="md:w-[44px] md:h-[44px] w-[36px] h-[36px] hover:scale-105 duration-300 -translate-x-[0px] lg:-translate-x-0"
+              />
+            </Link>
+          </div>
+        </nav>
+      </header>
+    </Wrap>
+  );
 }
