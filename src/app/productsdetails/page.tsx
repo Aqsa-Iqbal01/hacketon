@@ -15,7 +15,7 @@ export default function Page() {
 
   return (
     <Wrap>
-    // nav bar 
+  
    
     <div className='w-full flex'>
       <div className="first hidden sm:flex w-[20%]">
@@ -55,7 +55,7 @@ export default function Page() {
           </div>
           {showMore && (
             <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {/* car images  */}
+            
               {[
                 {  image: '/Catalog 2 (3).png', },
                 {image: '/Catalog 2 (1).png',},
@@ -77,7 +77,7 @@ export default function Page() {
             </div>
           )}
         </section>
-            {/* show more toggle  */}
+           
         <section className="button w-full text-center">
           <button 
             onClick={toggleShowMore} 

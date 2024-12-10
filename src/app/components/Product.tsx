@@ -44,6 +44,7 @@ const ProductList: React.FC = () => {
                 {/* Car Image */}
                 <img
                   src={car.image}
+                  alt="cars"
                   
                   className="w-full object-cover rounded-lg mb-4"
                 />
