@@ -45,7 +45,7 @@ export default function Navbar() {
             <IoMdSettings className="hidden md:flex border-[1px] border-[#C3D4E966] rounded-full p-2 text-5xl text-gray-500 hover:scale-105 duration-300 hover:text-[#3563E9]" />
             <Link href="#">
               <Image
-                src="/image.png"
+                src="/Image.png"
                 alt=""
                 width={40}
                 height={40}
