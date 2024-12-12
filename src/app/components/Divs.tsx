@@ -1,6 +1,5 @@
 import { LuArrowDownUp } from 'react-icons/lu';
 import React from 'react'
-import Image from 'next/image'
 import Wrap from './Wrap'
 
     
