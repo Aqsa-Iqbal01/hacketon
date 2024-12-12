@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from "next/link";
 import { Card, CardFooter, CardHeader, } from "@/components/ui/card";
 import Wrap from '../components/Wrap';
+import SlideBar from '../components/SlideBar';
 
 export default function page() {
   return (
@@ -10,8 +11,8 @@ export default function page() {
       {/* wrapper  */}
       <div className='w-full flex overflow-x-hidden'>
         <div className="first hidden sm:flex w-[25%]">
-          {/* nav bar  */}
-          <Image src={'/Nav Bar Side.png'} alt='' width={360} height={1600} />
+          {/* Slidebar  */}
+          <SlideBar/>
         </div>
         <div className="sec w-full sm:w-[75%] bg-[#f6f7f9] p-4 sm:p-6  flex flex-col gap-10 font-[family-name:var(--font-geist-sans)]">
           <section className=' w-full flex flex-col md:flex-row gap-5  items-center justify-around'>
