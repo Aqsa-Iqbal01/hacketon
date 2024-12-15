@@ -43,7 +43,7 @@ export default function page() {
                     $80.00 / <span className="text-gray-500 text-sm lg:text-base">day $100.00</span>
                   </h1>
                 </div>
-                <Link href={"/carpayment"}>
+                <Link href={"/payment"}>
                   <button className="bg-[#3563e9]  duration-300 hover:scale-105 transition-all p-3 sm:p-4 px-6 sm:px-10 text-nowrap  text-white rounded-md w-full max-w-[180px] text-center">
                     Rent Now
                   </button>
