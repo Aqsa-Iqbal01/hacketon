@@ -120,7 +120,7 @@ export default function page() {
             <div className="first w-full flex items-center justify-between px-10 xl:px-14">
               <h1 className="text-gray-500 text-lg sm:text-xl">Recomendation Car</h1>
               {/* veiw all section  */}
-              <Link href={"/carpayment"}>
+              <Link href={"/payment"}>
                 <h1 className="text-[#3563e9] font-bold hover:underline decoration-[#3563e9]">
                   View All
                 </h1>

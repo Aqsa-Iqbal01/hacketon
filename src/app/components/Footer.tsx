@@ -39,9 +39,6 @@ export default function Footer() {
               <li className="font-bold text-lg lg:mr-16"><h1>Socials</h1></li>
               <li className='text-gray-400'>Discord</li>
               <li className='text-gray-400' >Instagram</li>
-              <li className='text-gray-400' >Instagram</li>
-              <li className='text-gray-400'>Instagram</li>
-              <li className='text-gray-400'>Facebook</li>
               <li  className='text-gray-400'>Facebook</li>
               <li  className='text-gray-400'>Twitter</li>
             </ul>
