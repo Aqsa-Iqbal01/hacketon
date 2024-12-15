@@ -18,7 +18,7 @@ export default function page() {
           <section className=' w-full flex flex-col md:flex-row gap-5  items-center justify-around'>
             <div className='first flex flex-col gap-4 w-full  lg:max-w-[470px]  lg:max-h-[508px]'>
               <div>
-                <Image src={'/View.png'} alt='' width={492} height={360} />
+                <Image src={'/View (1).png'} alt='' width={492} height={360} />
 
               </div>
               <div className=' flex items-center justify-between gap-2 lg:gap-0'>
