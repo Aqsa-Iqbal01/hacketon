@@ -3,7 +3,7 @@
 export interface fullProduct {
     _id:string;
     name: string;
-    image:any;
+    image:string;
     pricePerDay:string;
     fuelCapacity:string;
     seatingCapacity: number;
