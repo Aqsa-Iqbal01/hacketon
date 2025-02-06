@@ -90,7 +90,7 @@ const ProductList = () => {
 
                   {/* Rent Button */}
                   <div className="flex justify-start mt-auto">
-                    <Link href="/products">
+                    <Link href="/productsdetails">
                       <button className="bg-blue-600 text-white py-2 px-7 ml-40 md:px-5 md:ml-24 lg:ml-40 -translate-y-11 rounded-lg hover:bg-blue-400 duration-300 hover:scale-105 transition">
                         Rent Now
                       </button>
