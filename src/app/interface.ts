@@ -37,3 +37,4 @@ export interface Car {
     image: string; 
     slug: string              // URL for the car's image
   }
+  

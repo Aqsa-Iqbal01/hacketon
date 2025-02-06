@@ -16,10 +16,8 @@ async function getDataPayment(slug: string) {
     return data;
 }
 
-
-
-const Payment = async ({ params }: { params: { slug: string } }) => {
-    const data = await getDataPayment(params.slug); // Fetch car data based on the slug
+const Payment = async ({ params }: { params: Promise<{ slug: string }> }) => {
+    const data = await getDataPayment((await params).slug); // Fetch car data based on the slug
 
     if (!data) {
         return <div>Loading...</div>; // Handle loading or no data found
