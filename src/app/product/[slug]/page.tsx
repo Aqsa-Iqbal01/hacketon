@@ -23,8 +23,8 @@ async function getCarDetails(slug: string) {
   return data;
 }
 
-export default async function CarDetailsPage({ params }: { params: { slug: string } }) {
-  const car = await getCarDetails(params.slug);
+export default async function CarDetailsPage({ params }: { params: Promise<{ slug: string }> }) {
+  const car = await getCarDetails((await params).slug);
 
   if (!car) {
     return <div>Car not found!</div>;

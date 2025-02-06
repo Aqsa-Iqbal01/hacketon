@@ -16,6 +16,8 @@ async function getDataPayment(slug: string) {
     return data;
 }
 
+
+
 const Payment = async ({ params }: { params: { slug: string } }) => {
     const data = await getDataPayment(params.slug); // Fetch car data based on the slug
 
